@@ -1,4 +1,4 @@
-<h1>Hello everyone, I'm <a href="https://revank.me">Revan Kurniawan</a> &#128075</h1>
+<h1>&#128075 Hello everyone, I'm <a href="https://revank.me">Revan Kurniawan</a></h1>
 <h3>
   <span>Hi, I'm Revan. I am a Developer and I am also a Student,</span>
   <p>I Like with something new and learn it</p>
