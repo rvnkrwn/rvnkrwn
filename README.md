@@ -1,7 +1,7 @@
 <h1>&#128075 Hello everyone, I'm <a href="https://revank.me">Revan Kurniawan</a></h1>
 <h3>
   <span>Hi, I'm Revan. I am a Developer and I am also a Student,</span>
-  <p>I Like with something new and learn it</p>
+  <p>&#9203 I Like with something new and learn it</p>
 </h3>
 <ul>
   <li><a>&#127890 I'm learning laravel and reactjs, As well as deepening JS</a></li>
