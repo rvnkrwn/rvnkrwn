@@ -4,7 +4,7 @@
   <p>&#9203 I Like with something new and learn it</p>
 </h3>
 <ul>
-  <li><a>&#127890 I'm learning laravel and reactjs, As well as deepening JS</a></li>
+  <li><a>&#127890 I'm learning laravel <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/laravel-svgrepo-com.svg" width="15px"> and reactjs <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/reactjs-svgrepo-com.svg" width="15px">, As well as deepening JS</a></li>
   <li><a>&#127918 I also play FPS games like Valorant, PUBG, etc</a></li>
   <li><a>&#128064 watching youtube</a></li>
   <li><a>&#127916 Watch movies on netflix</a></li>
