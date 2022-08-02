@@ -11,4 +11,7 @@
   
   <br>
   <h3>Language and Development Tools: </h3>
-<img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/phpstorm.svg" width="20">
+<div style="display: flex;>
+  <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/vscode-svgrepo-com.svg" width="30px">
+  <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/phpstorm-svgrepo-com.svg" width="30px">
+</div>
