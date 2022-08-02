@@ -5,14 +5,10 @@
 </h3>
 <ul>
   <li><a>&#127890 I'm learning laravel and react js,</a></li>
-  <li><a>&#127881</a></li>
-  <li><a>&#127881</a></li>
-  <li><a>&#127881</a></li>
+  <li><a>&#127918 I also play FPS games like Valorant, PUBG, etc</a></li>
+  <li><a>&#128064 watching youtube</a></li>
+  <li><a>&#127916 Watch movies on netflix</a></li>
  </ul>
-
-
-  
-  <br>
   <h3>Language and Development Tools: </h3>
 <div style="display: flex; width: 100%'">
   <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/vscode-svgrepo-com.svg" width="30px">
