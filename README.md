@@ -1,6 +1,6 @@
 <h1>&#128075 Hello everyone, I'm <a href="https://revank.me">Revan Kurniawan</a></h1>
 <h3>
-  <span>Hi, I'm Revan. I am a Developer and I am also a Student,</span>
+  <span>Hi, my name is Revan, I am a developer and student from Indonesia</span>
   <p>&#9203 I Like with something new and learn it</p>
 </h3>
 <ul>
