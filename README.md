@@ -3,6 +3,7 @@
   <span>Hi, my name is Revan, I am a developer and student from Indonesia</span>
   <p>&#9203 I Like with something new and learn it</p>
 </h3>
+<hr>
 <ul>
   <li><a>I'm learning laravel <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/laravel-svgrepo-com.svg" width="15px"> and reactjs <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/reactjs-svgrepo-com.svg" width="15px">, As well as deepening JS</a></li>
   <li><a>I also play FPS <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/bullet-svgrepo-com.svg" width="15px"> games like Valorant, PUBG, etc</a></li>
