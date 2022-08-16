@@ -28,6 +28,8 @@
   &nbsp;
   <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/terminal-svgrepo-com.svg" width="30px">
   &nbsp;
+  <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/bootstrap-svgrepo-com.svg" width="30px">
+  &nbsp;
   <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/tailwind-svgrepo-com.svg" width="30px">
   &nbsp;
   <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/package-svgrepo-com.svg" width="30px">
