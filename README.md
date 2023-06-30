@@ -37,5 +37,9 @@
   &nbsp;
   <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/codeigniter-svgrepo-com.svg" width="30px">
   &nbsp;
-  <span>MongoDB</span>
+  <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/nodejs-icon-svgrepo-com.svg" width="30px">
+  &nbsp;
+  <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/mongo-svgrepo-com.svg" width="30px">
+  &nbsp;
+  <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/next-js-svgrepo-com.svg" width="30px">
 </div>
