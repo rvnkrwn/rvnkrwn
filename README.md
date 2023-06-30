@@ -5,7 +5,7 @@
 </h3>
 <hr>
 <ul>
-  <li><a>I'm learning laravel <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/laravel-svgrepo-com.svg" width="15px"> and reactjs <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/reactjs-svgrepo-com.svg" width="15px">, As well as deepening JS</a></li>
+  <li><a>I'm learning nodejs, expressjs, and reactjs <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/reactjs-svgrepo-com.svg" width="15px">, As well as deepening JS</a></li>
   <li><a>I also play FPS <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/bullet-svgrepo-com.svg" width="15px"> games like Valorant, PUBG, etc</a></li>
   <li><a>&#128064 watching youtube</a></li>
   <li><a>&#127916 Watch movies on netflix</a></li>
