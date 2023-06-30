@@ -37,4 +37,6 @@
   <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/mysql-svgrepo-com.svg" width="30px">
   &nbsp;
   <img src="https://github.com/rvnkrwn/rvnkrwn/blob/main/img/codeigniter-svgrepo-com.svg" width="30px">
+  &nbsp;
+  <p>MongoDB</p>
 </div>
