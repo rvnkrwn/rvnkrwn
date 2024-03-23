@@ -5,7 +5,7 @@
 <script setup lang="ts">
 import * as THREE from 'three';
 onMounted(() => {
-  class WaterFluid {
+  class Plane {
     private geometry: THREE.PlaneGeometry | undefined;
     private viewWidth: number;
     private viewHeight: number;
@@ -45,10 +45,10 @@ onMounted(() => {
 
     setMaterial() {
       const colors = [
-        new THREE.Color('#141414'),
+        new THREE.Color('#020a23'),
         new THREE.Color('#47a4a2'),
         new THREE.Color('#8b3991'),
-        new THREE.Color('#000000'),
+        new THREE.Color('#020a23'),
         new THREE.Color('#604995')
       ];
 
@@ -56,8 +56,8 @@ onMounted(() => {
 
       this.material = new THREE.ShaderMaterial({
         uniforms: {
-          time: { value: 20.0 },
-          amplitude: { value: 0.05 },
+          time: { value: 10.0 },
+          amplitude: { value: 0.01 },
           frequency: { value: 10.0 },
           colors: { value: colors }
         },
@@ -81,10 +81,10 @@ onMounted(() => {
 
             void main() {
                 // Menghitung indeks warna berdasarkan posisi piksel
-                float mixFactor = abs(cos(vPosition.y * vPosition.x * time) * sin(vPosition.x - time) * cos(vPosition.y - time));
-                int colorIndex1 = int(mod(mixFactor * 5.0, 5.0)); // 10 adalah jumlah warna
-                int colorIndex2 = (colorIndex1 + 1) % 5; // Indeks warna berikutnya
-                float blendFactor = fract(mixFactor * 5.0); // Faktor pencampuran
+                float mixFactor = abs(cos(vPosition.y * vPosition.x * time) * sin(vPosition.x - time) * cos(vPosition.y - time * 1.0));
+                int colorIndex1 = int(mod(mixFactor * 5.0, 5.0));
+                int colorIndex2 = (colorIndex1 + 1) % 5;
+                float blendFactor = fract(mixFactor * 5.0);
 
                 // Menggunakan fungsi mix untuk mencampurkan warna secara lembut
                 vec3 finalColor = mix(colors[colorIndex1], colors[colorIndex2], blendFactor);
@@ -114,7 +114,7 @@ onMounted(() => {
     }
   }
 
-  const WaterFluidApp = new WaterFluid();
+  const PlaneApp = new Plane();
 })
 </script>
 

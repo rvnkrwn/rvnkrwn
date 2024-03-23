@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 
-import WaterFluid from "~/components/three_components/water_fluid/WaterFluid.vue";
+import WaterFluid from "~/components/three_components/PlaneColorDynamic.vue";
 </script>
 
 <style scoped>
