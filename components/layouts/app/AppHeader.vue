@@ -47,7 +47,7 @@
         </li>
         <li><hr class="opacity-40 text-sm w-7" /></li>
         <li class="menu-item">
-          <div @click="handleNavigate('/about')" class="menu-link">About Me</div>
+          <div @click="handleNavigate('/#about-me')" class="menu-link">About Me</div>
         </li>
         <li><hr class="opacity-40 text-sm w-7" /></li>
         <li class="menu-item">
@@ -167,11 +167,11 @@ useHead({
 }
 
 #label-scroll {
-  @apply hidden md:flex fixed z-[9999] bottom-24 right-0 transform translate-x-1/3 rotate-90 items-center gap-2
+  @apply hidden md:flex text-sm tracking-wide fixed z-[9999] bottom-24 right-3 transform translate-x-1/3 rotate-90 items-center gap-2
 }
 
 #copyright {
-  @apply hidden md:block fixed z-[9999] bottom-24 left-0 transform -translate-x-1/3 rotate-90
+  @apply hidden md:block text-sm tracking-wide fixed z-[9999] bottom-20 left-3 transform -translate-x-1/3 rotate-90
 }
 
 #menus {

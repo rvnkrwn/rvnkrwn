@@ -6,9 +6,11 @@
 @tailwind utilities;
 
 * {
-    @apply select-none
+    @apply transition-all
 }
 
 body {
     background: black;
+    width: 100dvw;
+    overflow-x: hidden;
 }

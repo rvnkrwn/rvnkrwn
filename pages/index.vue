@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <WaterFluid />
+  <div id="wrapper">
+    <PlaneColorDynamic />
     <section id="hero">
       <div id="hero-content">
         <h1 class="flex justify-between">
@@ -15,20 +15,56 @@
       </div>
     </section>
 
-    <section id="content" class="bg-uranian-blue !hidden">
+    <section id="content">
 
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import PlaneColorDynamic from "~/components/three_components/PlaneColorDynamic.vue";
 
-import WaterFluid from "~/components/three_components/PlaneColorDynamic.vue";
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger)
+  const tl = gsap.timeline( {
+    scrollTrigger: {
+      trigger: "#hero",
+      start: "top top",
+      end: "+=200",
+      pin: true,
+      onUpdate: (self) => {
+        const hero: HTMLElement | any = document.getElementById("hero");
+        const content: HTMLElement | any =  document.getElementById("content");
+        if (self.progress >= 0.5) {
+          hero.style.display = "none";
+          content.style.display = "block";
+          gsap.to(window, { duration: .3, scrollTo: "#content" });
+        } else {
+          hero.style.display = "flex";
+          content.style.display = "none";
+          gsap.to(window, { duration: .3, scrollTo: "#hero" });
+        }
+      }
+    },
+    yPercent: 0,
+    duration: .2
+  })
+
+})
 </script>
 
 <style scoped>
+#canvas {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  z-index: -1;
+}
+
 #hero {
-  @apply flex w-full h-[100dvh] items-center justify-center select-none
+  @apply flex w-full h-[100dvh] items-center justify-center absolute
 }
 
 #hero-content {
@@ -36,6 +72,6 @@ import WaterFluid from "~/components/three_components/PlaneColorDynamic.vue";
 }
 
 #content {
-  @apply h-[200dvh] w-full
+  @apply h-[500dvh] w-full absolute
 }
 </style>

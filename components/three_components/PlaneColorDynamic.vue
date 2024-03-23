@@ -9,7 +9,7 @@ onMounted(() => {
     private geometry: THREE.PlaneGeometry | undefined;
     private viewWidth: number;
     private viewHeight: number;
-    private material: THREE.ShaderMaterial | undefined;
+    private material: THREE.ShaderMaterial | any;
     private mesh: THREE.Mesh | undefined;
     private readonly scene: THREE.Scene;
     private readonly camera: THREE.PerspectiveCamera;
@@ -26,7 +26,7 @@ onMounted(() => {
       this.renderer = new THREE.WebGLRenderer();
       this.renderer.setSize(this.viewWidth, this.viewHeight);
       document.querySelector('#three-render')!.appendChild(this.renderer.domElement); // Tambahkan tanda seru untuk memastikan element ditemukan
-      this.camera.position.z = 1.5;
+      this.camera.position.z = 8.0;
       window.addEventListener('resize', () => this.onResize());
       this.render();
     }
@@ -40,23 +40,23 @@ onMounted(() => {
     }
 
     setGeometry() {
-      this.geometry = new THREE.PlaneGeometry(this.viewWidth, this.viewHeight, 500, 500); // Adjusted segment count
+      this.geometry = new THREE.PlaneGeometry(this.viewWidth, this.viewHeight, 100, 100); // Adjusted segment count
     }
 
     setMaterial() {
       const colors = [
-        new THREE.Color('#020a23'),
-        new THREE.Color('#47a4a2'),
-        new THREE.Color('#8b3991'),
-        new THREE.Color('#020a23'),
-        new THREE.Color('#604995')
+        new THREE.Color('#000000'),
+        new THREE.Color('#cdb553'),
+        new THREE.Color('#04b408'),
+        new THREE.Color('#3228df'),
+        new THREE.Color('#000000')
       ];
 
 
 
       this.material = new THREE.ShaderMaterial({
         uniforms: {
-          time: { value: 10.0 },
+          time: { value: 0.0 },
           amplitude: { value: 0.01 },
           frequency: { value: 10.0 },
           colors: { value: colors }
@@ -80,11 +80,11 @@ onMounted(() => {
             varying vec3 vPosition;
 
             void main() {
-                // Menghitung indeks warna berdasarkan posisi piksel
-                float mixFactor = abs(cos(vPosition.y * vPosition.x * time) * sin(vPosition.x - time) * cos(vPosition.y - time * 1.0));
+                // sin(vUv.x * waveFrequency + time) * waveAmplitude;
+                float mixFactor = abs(sin(vPosition.y - time * 5.0) * sin(vPosition.x - (time * 2.0)) * cos(vPosition.x - time / 2.0) + sin(vPosition.x - time / 2.0) + sin(vPosition.y + time / 2.0) + cos(vPosition.x + time / 2.0));
                 int colorIndex1 = int(mod(mixFactor * 5.0, 5.0));
                 int colorIndex2 = (colorIndex1 + 1) % 5;
-                float blendFactor = fract(mixFactor * 5.0);
+                float blendFactor = fract(mixFactor * 6.0);
 
                 // Menggunakan fungsi mix untuk mencampurkan warna secara lembut
                 vec3 finalColor = mix(colors[colorIndex1], colors[colorIndex2], blendFactor);
@@ -106,15 +106,16 @@ onMounted(() => {
 
     render() {
       requestAnimationFrame(() => this.render());
-      let max = false;
-      this.material.uniforms.time.value <= 50.0 ? max = true : max = false
+      let max ;
+      this.material.uniforms.time.value <= 1.0 ? max = true : max = false
       max ? this.material.uniforms.time.value -= 0.005 : this.material.uniforms.time.value += 0.005;
 
       this.renderer.render(this.scene, this.camera);
     }
   }
 
-  const PlaneApp = new Plane();
+  let PlaneApp = new Plane();
+  PlaneApp.render()
 })
 </script>
 
